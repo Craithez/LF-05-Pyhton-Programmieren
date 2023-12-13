@@ -1,0 +1,5 @@
+Temp0 = float(input("Erste Temperatur "))
+Temp1 = float(input("Zweite Temperatur "))
+Temp2 = float(input("Dritte Temperatur "))
+Temp3 = float((Temp0+Temp1+Temp2)/3)
+print("Der Durschschnitt ist: ", Temp3)
