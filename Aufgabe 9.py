@@ -1,5 +1,14 @@
-Geben Sie den booleschen Wert (True, False) für die folgenden Ausdrücke an, wenn x = 4 gilt.
-
-(x < 9) & (x >= -5) (x < 4) or (x <= 4)
-not(x < 5 and x < 10) (x*2 < 10) and (x+6 == 10)
-not(x) (x % 2 == 1) and (x % 3 == 1)
+x = int(4)
+#Nur die Ausgaben ohne den Textbums
+if((x < 9)&(x >= -5)):print(bool(True))
+else:print(bool(False))
+if((x < 4)|(x <= 4)):print(bool(True))
+else:print(bool(False))
+if(~( x < 5 & x < 10)):print(bool(True))
+else:print(bool(False))
+if((x*2 < 10)&(x+6 == 10)):print(bool(True))
+else:print(bool(False))
+if(x == ~x):print(bool(True))
+else:print(bool(False))
+if((x % 2 == 1)&(x % 3 == 1)):print(bool(True))
+else:print(bool(False))
