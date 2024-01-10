@@ -10,3 +10,10 @@ Der Mann ist Schurke, die Frau ist Ritter.
 c. Ein Volkszähler befragt ein Ehepaar: “Wer von Ihnen ist Ritter und wer ist Schurke?”.
 Der Mann antwortet: “Mindestens einer von uns ist Schurke.”
 Der Mann ist Ritter, die Frau Schurke.
+
+
+print("Es gibt zwei Charaktere A und B, bitte nur mit w oder f antworten.")
+ritter = input(char("Ist A ein Ritter? Wahr/Falsch"))
+schurke = input(char("Ist B ein Schurke? Wahr/Falsch"))
+
+if(ritter=w):print()
