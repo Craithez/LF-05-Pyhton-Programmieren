@@ -1,4 +1,3 @@
-#Aufgabe 10
 # x = x + 7 
 # a = a % 3
 x = float(input ("Bitte x eingeben! "))
