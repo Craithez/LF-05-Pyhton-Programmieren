@@ -41,15 +41,15 @@
 #print ("valid:", IPv4)
 
 def ip_checkv4(ip):
-        parts=ip.split(".")
-        if len(parts)<4 or len(parts)>4:
+        oktets=ip.split(".")
+        if len(oktets)<4 or len(oktets)>4:
             return "IP sollte aus 4 Oktets bestehen! "
         else:
-            while len(parts)== 4:
-                a=int(parts[0])
-                b=int(parts[1])
-                c=int(parts[2])
-                d=int(parts[3])
+            while len(oktets)== 4:
+                a=int(oktets[0])
+                b=int(oktets[1])
+                c=int(oktets[2])
+                d=int(oktets[3])
                 if a<= 0 or a == 127 :
                     return "ungültige IP Adresse "
                 elif d == 0:
