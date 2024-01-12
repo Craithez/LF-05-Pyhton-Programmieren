@@ -58,12 +58,12 @@ def ip_checkv4(ip):
                     return "Sollte nicht größer als 255 und nicht kleiner als 0 sein! "
                 elif b>255 or b<0: 
                     return "Sollte nicht größer als 255 und nicht kleiner als 0 sein! "
-                elif c>254 or c<0:
+                elif c>255 or c<0:
                     return "Sollte nicht größer als 255 und nicht kleiner als 0 sein! "
                 elif d>255 or c<0:
                     return "Sollte nicht größer als 255 und nicht kleiner als 0 sein! "
                 else:
                     return "Gültige IP Adresse ", ip
         
-p=(input("IP Adresse eingeben! "))
-print(ip_checkv4(p))
+ip=(input("IP Adresse eingeben! "))
+print(ip_checkv4(ip))
