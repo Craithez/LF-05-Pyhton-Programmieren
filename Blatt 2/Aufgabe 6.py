@@ -54,7 +54,7 @@ def ip_checkv4(ip):
                     return "ungültige IP Adresse "
                 elif d == 0:
                     return " " 
-                elif a>255:
+                elif a>255 or a<0:
                     return "Sollte nicht größer als 255 und nicht kleiner als 0 sein! "
                 elif b>255 or b<0: 
                     return "Sollte nicht größer als 255 und nicht kleiner als 0 sein! "
