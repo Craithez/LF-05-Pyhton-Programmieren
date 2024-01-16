@@ -12,7 +12,7 @@ def sortieren(array):
 		if not swapped:
 			return
 
-array = [64, 34, 25, 12, 22, 11, 90]
+array = [64, 34, 25]
 
 sortieren(array)
 
