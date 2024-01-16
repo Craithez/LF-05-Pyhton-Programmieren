@@ -1,18 +1,25 @@
-einheit = str(input("Bitte geben sie die Einheit an! In KB,MB oder GB. "))
-dateiGröße = input("Bitte geben sie die Dateigröße an (in ihrer Einheit): ")
-übertragungsRate = input("Bitte geben sie ihre Übertragungsrate an (in MB/s): ")
-transferZeit = 0
-KB = str("KB")
-MB = str("MB")
-GB = str("GB")
+einheit = str(input("Bitte geben sie die Einheit an! In a(KB),b(MB) oder c(GB) an."))
+a = None
+b = None
+c = None
 match einheit:
-    case 1 if einheit == KB:
+    case 1 if einheit == a:
+        dateiGröße = input("Bitte geben sie die Dateigröße an (in ihrer Einheit): ")
+        übertragungsRate = input("Bitte geben sie ihre Übertragungsrate an (in MB/s): ")
+        transferZeit = None
         transferZeit = (dateiGröße/1000)/übertragungsRate
         print("Es dauert: ", transferZeit, "s")
-    case 2 if einheit == MB:
+    case 2 if einheit == b:
+        dateiGröße = input("Bitte geben sie die Dateigröße an (in ihrer Einheit): ")
+        übertragungsRate = input("Bitte geben sie ihre Übertragungsrate an (in MB/s): ")
+        transferZeit = None
         transferZeit = dateiGröße/übertragungsRate
         print("Es dauert: ", transferZeit, "s")
-    case 3 if einheit == GB:        
+    case 3 if einheit == c:       
+        dateiGröße = input("Bitte geben sie die Dateigröße an (in ihrer Einheit): ")
+        übertragungsRate = input("Bitte geben sie ihre Übertragungsrate an (in MB/s): ")
+        transferZeit = None
         transferZeit = (dateiGröße*1000)/übertragungsRate
         print("Es dauert: ", transferZeit, "s")
+
 
