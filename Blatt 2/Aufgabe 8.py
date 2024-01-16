@@ -23,3 +23,5 @@ def ip_classcheck(ip):
         
 ip=(input("IP Adresse eingeben! "))
 print(ip_classcheck(ip))
+
+
