@@ -9,7 +9,10 @@
 #Ergebnis: 20
 
 #2
-#0? kA tbh
+#zahl = 0
+#while zahl != 1 or zahl != 2:
+#    print(zahl)
+#Ergebnis 0? kA raffe sein Ablaufplan nicht.
 
 #3
 #zahl = 0
@@ -21,6 +24,16 @@
 #Ergebnis 0, 0 * X = 0 und so
 
 #4
+#zahl =-2
+#i = 99
+#while i > 88:
+#    zahl = zahl +3
+#    zahl = -zahl
+#    i = i - 2
+#    print(zahl)
+#Ergebnis -1,-2,-1,-2,-1,-2
+
+#5
 #zahl = 0
 #i = 0
 #while i < 20:
@@ -32,15 +45,15 @@
 #print(zahl)
 #Ergebniss 600
 
-#5
-zahl = 100
-i = 10
-while i > 0:
-    if i % 2 == 0:
-        zahl = zahl - 1
-        i = i - 1
-    else:
-        zahl = zahl + i
-        i = i - 1   
-print(zahl)
-
+#6
+#zahl = 100
+#i = 10
+#while i > 0:
+#    if i % 2 == 0:
+#        zahl = zahl - 1
+#        i = i - 1
+#    else:
+#        zahl = zahl + i
+#        i = i - 1   
+#print(zahl)
+#Ergebnis 120
