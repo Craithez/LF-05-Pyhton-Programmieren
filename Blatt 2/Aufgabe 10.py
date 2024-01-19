@@ -23,3 +23,5 @@ def einheitencheck(einheit):
 
 einheit = input("Bitte geben sie die Einheit an! In a(KB), b(MB) oder c(GB) an: ")
 einheitencheck(einheit)
+
+#Klappt, wohlgemerkt nur SI Einheiten! Kein MBit/s oder MiB/s etc.
