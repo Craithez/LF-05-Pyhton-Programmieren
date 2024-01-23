@@ -5,12 +5,31 @@ import time
 def get_cpu_load():
     return psutil.cpu_percent(interval=1)
 
-def check_cpu_usage(threshold):
-    cpu_usage = psutil.cpu_percent(interval=1)  # Aktuelle CPU-Auslastung in Prozent
-    print(f"Aktuelle CPU-Auslastung: {cpu_usage}%")
+def check_cpu_usage(cpu_load):
+    if cpu_load < 70:
+        return "OK", f"CPU Last beträgt {cpu_load}%. Alles in Ordnung."
+    elif cpu_load >= 70 and cpu_load < 90:
+        return "WARNING", f"CPU Last beträgt {cpu_load}%! Vorsicht!"
+    else:
+        return "CRITICAL", f"CPU Last beträgt {cpu_load}%! kritisch und so!!111!"
+    
+def display_result(status, message):
+    print(f"Status: {status}\n{message}")
 
-    if cpu_usage > threshold:
-        print("Kritische CPU-Auslastung erreicht! Benachrichtigung erforderlich.")
+def main():
+    parser = argparse.ArgumentParser(description='Überprüfe die CPU-Auslastung und gib eine Meldung aus.')
+    args = parser.parse_args()
 
-# Beispielaufruf mit einem Schwellenwert von 80%
-check_cpu_usage(80)
+    try:
+        while True:
+            cpu_load = get_cpu_load()
+            status, message = check_cpu_usage(cpu_load)
+            display_result(status, message)
+
+            time.sleep(5)  # Warte 5 Sekunden, bevor die nächste Überprüfung durchgeführt wird
+
+    except KeyboardInterrupt:
+        print("\nProgramm beendet.")
+
+if __name__ == "__main__":
+    main()
