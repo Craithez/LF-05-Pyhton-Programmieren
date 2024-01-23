@@ -26,7 +26,7 @@ def main():
             status, message = check_cpu_usage(cpu_load)
             display_result(status, message)
 
-            time.sleep(5)  # Warte 5 Sekunden, bevor die nächste Überprüfung durchgeführt wird
+            time.sleep(10)  # Warte 10 Sekunden, bevor die nächste Überprüfung durchgeführt wird
 
     except KeyboardInterrupt:
         print("\nProgramm beendet.")
