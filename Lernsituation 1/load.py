@@ -1,4 +1,5 @@
 # Für den ganzen Bums braucht man ein Linux OS oder zumindest Linux Bash+WLS aufm Windows und Visual Studios.
+# Anschließend nur noch via cmd (mit Admin) ins Verzeichniss navigieren und mit "python load.py -w 70 80 90 -c 85 95 99 aufrufen".
 import argparse
 import psutil
 import time
