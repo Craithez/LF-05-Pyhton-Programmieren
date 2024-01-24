@@ -17,5 +17,5 @@ elif country == "Australien":
     else:
         shipping = 15
 print ("Ihre Kosten Lieferkosten betragen ",shipping,"$")
-
+#Funktioniert noch nicht
 

@@ -1,3 +1,4 @@
+# Für den ganzen Bums muss man auf Linux sein oder Ubuntu mit WSL aufm Windows haben. Und der Rotz braucht ebenfalls alle installierten Libs via pip. 
 import argparse
 import psutil
 import time
@@ -18,7 +19,7 @@ def display_result(status, message):
 
 def main():
     parser = argparse.ArgumentParser(description='Überprüfe die CPU-Auslastung und gib eine Meldung aus.')
-    parser.add_argument('-w', '--warning', nargs=3, type=float, help='Schwellenwerte für Warnungen (z. B. -w 0.9 0.8 0.7)')
+    parser.add_argument('-w', '--warning', nargs=3, type=float, help='Schwellenwerte für Warnungen (z. B. -w 0.9 0.8 0.7)')      # Stellt sich er das nur 3 Eingaben akzeptiert werden.
     parser.add_argument('-c', '--critical', nargs=3, type=float, help='Schwellenwerte für Kritikalität (z. B. -c 0.95 0.85 0.75)')
     args = parser.parse_args()
 
@@ -34,7 +35,8 @@ def main():
     except KeyboardInterrupt:
         print("\nProgramm beendet.")
     except Exception as e:
-        print(f"Fehler aufgetreten: {e}")
+        print(f"Fehler aufgetreten: {e}")   # Greift auf Exception Class zu und wirft Fehler aus,  e für Textbasierte Nachricht z.B 420
 
 if __name__ == "__main__":
     main()
+
