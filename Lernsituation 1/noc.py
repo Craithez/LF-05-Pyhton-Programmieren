@@ -1,4 +1,4 @@
-# Für den ganzen Bums muss man auf Linux sein oder Ubuntu mit WSL aufm Windows haben. Und der Rotz braucht ebenfalls alle installierten Libs via pip. 
+# Für den ganzen Bums braucht man ein Linux OS oder zumindest Linux Bash+WLS aufm Windows und Visual Studios.
 import argparse
 import psutil
 import time
