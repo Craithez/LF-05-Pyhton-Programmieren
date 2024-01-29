@@ -9,11 +9,11 @@ def get_cpu_load():
 
 def check_cpu_usage(cpu_load, warning_threshold, critical_threshold):
     if cpu_load < warning_threshold:
-        return "OK", f"CPU Last beträgt {cpu_load}%. Alles in Ordnung."
+        return "OK", f"CPU Last betragt {cpu_load}%. Alles in Ordnung."
     elif warning_threshold <= cpu_load < critical_threshold:
-        return "WARNING", f"CPU Last beträgt {cpu_load}%! Vorsicht!"
+        return "WARNING", f"CPU Last betraegt {cpu_load}%! Vorsicht!"
     else:
-        return "CRITICAL", f"CPU Last beträgt {cpu_load}%! Kritisch und so!!111!"
+        return "CRITICAL", f"CPU Last betraegt {cpu_load}%! Kritisch und so!!111!"
 
 def display_result(status, message):
     print(f"Status: {status}\n{message}")
