@@ -1,3 +1,4 @@
+import sys
 while True:
 
     print("1 Festplatte formatieren ")
@@ -16,6 +17,7 @@ while True:
         print("Festplatte wurde getrocknet.")
     elif print(auswahl == "4"):
         print("Programm wird beendet.")
-        exit
+        sys.exit
     else:
         print("Ungültige Eingabe.")    
+        
