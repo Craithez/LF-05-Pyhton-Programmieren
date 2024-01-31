@@ -1,0 +1,2 @@
+Eine For Schleife verwendet man wenn man weiß wieviele Iterationen das Programm durchlaufen soll. 
+Eine While Schleife wenn man eben jenes nicht weiß.
