@@ -13,6 +13,7 @@
 #while zahl != 1 or zahl != 2:
 #    print(zahl)
 #Ergebnis 0? kA raffe sein Ablaufplan nicht.
+#Er hat die Aufgabe angepasst
 
 #3
 #zahl = 0
