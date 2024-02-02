@@ -1,5 +1,4 @@
 n = int(input("Bitte Zahl eingeben: "))
-p = 1
 prim = True
 if n == 1:
     prim = False
