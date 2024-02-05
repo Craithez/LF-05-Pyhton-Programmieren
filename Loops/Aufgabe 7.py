@@ -1,6 +1,3 @@
-
-     
-
 def bin_2_dez(num):
 
     bits = list(str(num))
