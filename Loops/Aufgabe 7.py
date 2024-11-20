@@ -10,10 +10,8 @@ def bin_2_dez(num):
         zaehler+=1
     print(dez)
 
-if __name__ == '__main__':
-
-    # Binär Value
-    bin_val = int(input("Binaerzahl eingeben: "))
+# Binär Value
+bin_val = int(input("Binaerzahl eingeben: "))
      
-    # Funktion aufrufen
-    bin_2_dez(bin_val)
+# Funktion aufrufen
+bin_2_dez(bin_val)
